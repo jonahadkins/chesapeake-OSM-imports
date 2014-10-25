@@ -1,6 +1,5 @@
 #Chesapeake OSM Import
 ###Repository for getting the City of Chesapeake's GIS layers imported to OpenStreetMap  
-=====================
 
 Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.chesva.opendata.arcgis.com/)
 
