@@ -27,6 +27,6 @@ Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.
 
 * Address Points (99,058 Records)
   * All Other Addresses (status = 'true','multi';'corner')
-  * Add rAttributes: Postcode, City, House Number, Street Name
+  * Add Attributes: Postcode, City, House Number, Street Name
 
 Yeah Open Data!
