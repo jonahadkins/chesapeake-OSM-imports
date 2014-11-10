@@ -25,7 +25,11 @@ Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.
    * ~~Ches. GIS Office Suggestion -> (Joined From Parcels on 'map_parcel')~~
    * Ran Summary Stats on buildings for `max('area')` and grouped by `'map_parcel'` ; This essentially isolated properties with only one building (40,145) and the largest building for parcels with multiple buildings (26,936), for residential buildings it selected the house only (assuming the house was the largest structure). These structures were given a `addr=1` coding.
    * Resulting file was joined to address points layer `on 'addr'=1` and parsed address information was added to buildings file.
+   * Calculated Building types over to OSM Tag methodology
+   * Created polygons for splitting features in to smaller areas; `total sections = 35`
 
+
+\/ \/ \/ \/ Will Do Address Points Later :|
 * Address Points (99,058 Records)
   * All Other Addresses (status = 'true','multi';'corner')
   * Add Attributes: Postcode, City, House Number, Street Name
