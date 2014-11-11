@@ -1,4 +1,6 @@
-### Date of OSM Upload By Section #
+### Date of OSM Upload By Section
+##### See chesapeake-OSM-imports / new / osm import shapes folder
+
 
 | Section  | Date |  
 | ------------- | ------------- |  
