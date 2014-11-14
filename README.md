@@ -3,8 +3,9 @@
 
 ![chesapeake](https://raw.githubusercontent.com/jonahadkins/chesapeake-OSM-imports/master/chesapeake.JPG)
 
-Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.chesva.opendata.arcgis.com/)
-The City of Chesapeake recently [`turned on`](https://opendata.arcgis.com/about) open data for their ArcGIS Online instance. This presented a great opportunity to import building footprints and addresses into OSM.
+The City of Chesapeake recently [`turned on`](https://opendata.arcgis.com/about) open data for their ArcGIS Online instance. This presented a great opportunity to import building footprints and addresses into OSM.  
+
+Vist the City of Chesapeake ArcGIS [Open Data Portal](http://public.chesva.opendata.arcgis.com/)
 
 ###Pre-Processing  
 After an initial download and inspection of the data I engaged with the city's [GIS Team](gisteam@cityofchesapeake.net ) to make them aware of the import plans, as well as, get answers for questions on the data/attributes. The team was very helpful in offering suggestions and answering all my questions.
