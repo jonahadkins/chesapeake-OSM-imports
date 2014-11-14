@@ -1,10 +1,14 @@
-#Chesapeake OSM Import
-###Repository for getting the City of Chesapeake's GIS layers imported to OpenStreetMap  
+#Chesapeake, Virginia OSM Buildings Import
+###From ArcGIS Open Data To OpenStreetMap  
 
 Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.chesva.opendata.arcgis.com/)
+The City of Chesapeake recently [`turned on`](https://opendata.arcgis.com/about) open data for their ArcGIS Online instance. This presented a great opportunity to import building footprints and addresses into OSM.
+
+###Pre-Processing  
+After an initial download and inspection of the data I engaged with the city's [GIS Team](gisteam@cityofchesapeake.net ) to make them aware of the import plans, as well as, get answers for questions on the data/attributes. The team was very helpful in offering suggestions and answering all my questions.
 
 * Building Footprints (108,822 Records)
-  * Building Classification Codes
+  * Existing Building Classification Codes
     * 1 - General/Residential
     * 2 - Government
     * 3 - Medical
@@ -28,10 +32,22 @@ Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.
    * Calculated Building types over to OSM Tag methodology
    * Created polygons for splitting features in to smaller areas; `total sections = 35`
 
+Final building file attributes included:
+* addr:housenumber
+* addr:street (`prefix` + `name` + `type` + `suffix`)
+* addr: city
+* addr: state
+* addr: postcode
+* name
+* comments: (`map_parcel` - city parcel id)
+* unit: (address unit number/letter)
 
-\/ \/ \/ \/ Will Do Address Points Later :|
-* Address Points (99,058 Records)
-  * All Other Addresses (status = 'true','multi';'corner')
-  * Add Attributes: Postcode, City, House Number, Street Name
+### Upload / Import To OSM  
+Building footprint section were uploaded using JOSM with attributes mapped to the OSM Tag convention. Import process was completed over a [1 week period](https://github.com/jonahadkins/chesapeake-OSM-imports/blob/master/upload%20schedule.md)
+
+#ToDo  
+Import secondary address points (apts, duplex, shopping center, etc.) 
+* Total Address Points (99,058 Records)
+  
 
 Yeah Open Data!
