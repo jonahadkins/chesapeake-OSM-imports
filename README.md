@@ -1,6 +1,8 @@
 #Chesapeake, Virginia OSM Buildings Import
 ###From ArcGIS Open Data To OpenStreetMap  
 
+![chesapeake](https://raw.githubusercontent.com/jonahadkins/chesapeake-OSM-imports/master/chesapeake.JPG)
+
 Source Data Downloaded From City of Chesapeake [Open Data Portal](http://public.chesva.opendata.arcgis.com/)
 The City of Chesapeake recently [`turned on`](https://opendata.arcgis.com/about) open data for their ArcGIS Online instance. This presented a great opportunity to import building footprints and addresses into OSM.
 
@@ -38,6 +40,7 @@ Final building file attributes included:
 * addr: city
 * addr: state
 * addr: postcode
+* building: (= `yes` `industrial` `house`, etc)
 * name
 * comments: (`map_parcel` - city parcel id)
 * unit: (address unit number/letter)
@@ -46,8 +49,10 @@ Final building file attributes included:
 Building footprint section were uploaded using JOSM with attributes mapped to the OSM Tag convention. Import process was completed over a [1 week period](https://github.com/jonahadkins/chesapeake-OSM-imports/blob/master/upload%20schedule.md)
 
 #ToDo  
-Import secondary address points (apts, duplex, shopping center, etc.) 
-* Total Address Points (99,058 Records)
+Import secondary address points (apts, duplex, shopping center, etc.)  
+* Total Address Points (99,058 Records)  
+
+Import subdivision and neighborhood boundaries
   
 
 Yeah Open Data!
